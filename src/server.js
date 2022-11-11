@@ -17,10 +17,6 @@ app.listen(process.env.PORT || 5000, () => {
     console.log("Server is runnning");
 });
 
-app.get("/", (req, res) => {
-    res.sendFile(__dirname + "/index.html");
-});
-
 app.post("/", (req, res) => {
     // Respond to the URL verification
     res.set({
